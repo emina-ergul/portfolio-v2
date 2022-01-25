@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background: rgb(3, 3, 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.b {
+    color: rgb(20, 161, 255);
+}
+.g {
+    color: rgb(16, 233, 52);
+}
+.y {
+    color: rgb(255, 239, 19);
+}
+.p {
+    color: rgb(154, 12, 236);
+}
+
+nav {
+    width: 100%;
+    padding: 20px 40px 20px 20px;
+    background: rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-between;
+    color: mediumslateblue;
+}
+
+.title {
+    border: 2px solid cyan;
+    font-size: 20px;
+}
+
+.nav-bar {
+    border: red 2px solid;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+.nav-bar li {
+    margin-left: 60px;
+}
+.nav-bar a {
+    text-decoration: none;
+    font-weight: 600;
+}
+.nav-bar a:hover {
+    color: rgb(200, 200, 200);
+}
+
+.banner-cont {
+    margin-top: 50px;
+    border: 3px rgb(255, 0, 0) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 70px;
+    
+}
+
+.banner {
+    /* border: 5px solid rgb(216, 216, 216); */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background: rgb(29, 29, 29);
+    border-radius: 2px;
+    padding: 25px 25px;
+    width: 670px;
+}
+
+.banner-text {
+    border: 3px solid red;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.typed {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+#gif {
+    width: 130px;
+}
+
+footer {
+    width: 100%;
+    background: rgb(8, 8, 8);
+    position: absolute;
+    bottom: 0;
+    padding: 10px 10px 0 10px;
+}
+
+.footer-cont {
+    border: 2px solid red;
+    text-align: center;
+    margin: 20px;
+}
+
+.footer-cont i {
+    font-size: 27px;
+    margin: 2px 16px;
+    /* color: rgb(129, 129, 129); */
+}
+.footer-cont i:hover {
+    color: #fff;
+}
+
+.copyright {
+    color: rgb(129, 129, 129);
+    text-align: center;
+    margin-top: 10px;
+}
