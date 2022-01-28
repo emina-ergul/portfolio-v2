@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -40,8 +42,9 @@ nav {
   color: rgb(130, 108, 255);
 }
 
-.heading {
-  font-size: 20px;
+.heading h1 {
+    font-size: 30px;
+    color: #fff;
 }
 
 .nav-bar {
@@ -81,7 +84,7 @@ nav {
 }
 
 .banner {
-  box-shadow: rgb(51, 51, 51) 5px 5px, rgba(47, 47, 47, 0.548) 10px 10px,
+  box-shadow: rgb(53, 53, 53) 5px 5px, rgba(47, 47, 47, 0.548) 10px 10px,
     rgba(36, 36, 36, 0.226) 15px 15px, rgba(14, 14, 14, 0.062) 20px 20px;
   color: #fff;
   display: flex;
@@ -108,7 +111,7 @@ nav {
   color: mediumturquoise;
 }
 
-.typed {
+/* .typed {
   font-size: 36px;
   font-weight: 900;
   margin-bottom: 12px;
@@ -124,13 +127,103 @@ nav {
   height: 40px;
   background: rgb(11, 180, 39);
   animation: flash 0.9s infinite;
-}
+} */
 
-@keyframes flash {
+.container {
+    color: var(--color);
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  /* .right {
+    text-align: right;
+    width: 100%;
+  } */
+  
+  .stack {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  
+  .stack span {
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-size: 50px;
+    --stack-height: calc(100% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 350ms cubic-bezier(.49,0.8,0,1.24) 1.1 backwards calc(var(--index) * 140ms), glitch 2s ease infinite 2.2s alternate-reverse, glitch2 ease 4s infinite;
+    /* animation-delay: 1s; 46,29,0,1.24,,, *120*/
+  }
+  
+  .stack span:nth-child(odd) { --glitch-translate: 11px; }
+  .stack span:nth-child(even) { --glitch-translate: -30px; }
+  .stack span:nth-child(odd) { --glitch2-translate: 5px; }
+  .stack span:nth-child(even) { --glitch2-translate: -5px; }
+  
+  @keyframes stack {
+    0% {
+      opacity: 0;
+      transform: translateX(50%);
+      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    };
+    60% {
+      opacity: 0.5;
+      transform: translateX(-50%);
+    }
+    80% {
+      transform: none;
+      opacity: 1;
+      text-shadow: 3px -4px 0 rgb(255, 238, 0), -3px 4px 0 rgb(0, 195, 255),  5px -6px 0 rgb(195, 0, 255);
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: -5px 7px 0 rgb(255, 0, 255), 4px -6px 0 rgb(98, 0, 255);
+      transform: translate(var(--glitch-translate));
+    }
+    2% {
+      text-shadow: 4px -6px 0 rgb(195, 0, 255), -2px 3px 0 rgb(251, 255, 0);
+    }
+    3% {
+      text-shadow: 4px -5px 0 rgb(0, 225, 255), -2px 3px 0 rgb(251, 255, 0);
+    }
+    
+     6%, 100% {  text-shadow: none; transform: none; }
+  }
+
+  @keyframes glitch2 {
+    22% {
+        text-shadow: none; transform: none;
+    }
+    24% {
+      text-shadow: 3px -3px 0 rgb(195, 0, 255), -2px 0px 0 rgb(251, 255, 0);
+    }
+    27% {
+      text-shadow: 3px 0px 0 rgb(0, 225, 255), -2px 0px rgb(251, 255, 0);
+      transform: translate(var(--glitch2-translate));
+    }
+      28%, 100% {
+        text-shadow: none; transform: none; 
+     }
+  }
+  
+
+/* @keyframes flash {
   50% {
     opacity: 0;
   }
-}
+} */
 
 #gif {
   width: 160px;
@@ -167,6 +260,17 @@ section {
 .project img {
   margin: 7px 0;
   border-radius: 3px;
+}
+
+.grey {
+    height: 200px ;
+    width: 330px;
+    background: rgb(17, 17, 17);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
 }
 
 #about {
@@ -220,6 +324,37 @@ footer {
   background: rgb(8, 8, 8);
   padding: 10px 10px 0 10px;
   margin-top: 20px;
+  text-align: center;
+}
+
+.wiggle {
+    padding: 3px;
+    display: inline-block;
+    /* text-decoration: none; */
+    color: rgb(255, 239, 19);
+    transform: translateY(-3px);
+    animation: wiggle 2.2s infinite ease;
+}
+.wiggle:hover {
+    color: mediumslateblue
+}
+
+@keyframes wiggle {
+    /* 10% {
+    transform: rotate(10deg);
+}   20% {
+    transform: rotate(-10deg);
+}   30% {
+    transform: rotate(4deg);
+}  40% {
+    transform: rotate(0deg);
+} */
+    50% {
+        transform: translateY(-7px);
+    }
+    100% {
+        transform: translateY(-2px);
+    }
 }
 
 .footer-cont {
@@ -336,5 +471,9 @@ footer {
   .about-contents,
   .project {
     text-align: center;
+  }
+  .about-contents img {
+    height: 220px;
+    width: 220px;
   }
 }

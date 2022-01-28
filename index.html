@@ -29,22 +29,35 @@
         <ul>
           <li><a class="b" href="#about">About</a></li>
           <li><a class="g" href="#projects">Projects</a></li>
-          <li><a class="y" href="#contact">Contact</a></li>
+          <li><a class="y" target="blank" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
     <div class="banner-cont">
       <div class="banner">
         <div class="gif-cont">
-          <img id="gif" src="media\me-sprite.gif" alt="Pixel sprite Mina" />
+          <img id="gif" src="media\sprite-me.gif" alt="Pixel sprite Mina" />
         </div>
         <div class="banner-text">
-          <span class="typed"> </span>
-          <img id="gif-m" src="media/me-sprite.gif" alt="Pixel sprite Mina">
+
+          <div class="container">
+            <div class="stack" style="--stacks: 3;">
+              <span style="--index: 0;">Hello World</span>
+              <span style="--index: 1;">Hello World</span>
+              <span style="--index: 2;">Hello World</span>
+            </div>
+            <!-- <span class="right">Developer</span> -->
+          </div>
+          <img id="gif-m" src="media/sprite-me.gif" alt="Pixel sprite Mina">
           <p>
-            Hey! Welcome to my site. I'm a self taught front-end developer on a
-            mission to create.
-          </p>
+              Hey! Welcome to my site. I'm a self taught front-end developer on a
+              mission to create.
+            </p>
+          
+        </div>
+          <!-- <span class="typed"> </span> -->
+          
+          
         </div>
       </div>
     </div>
@@ -63,10 +76,13 @@
                 <img src="media/gg.png" alt="galactic goals thumbnail">
                 <p>Retro game like to-do list app that I intend to build on as I learn more.</p>
             </div>
-            <!-- <div class="project">
-                <p class="p-title">title here</p>
-            </div>
             <div class="project">
+                <p class="p-title">React Project</p>
+                <div class="grey">
+                  <p class="progress">In progress...</p>
+                </div>
+            </div>
+            <!-- <div class="project">
                 <p class="p-title">title here</p>
             </div> -->
         </div>
@@ -82,16 +98,18 @@
       </div>
     </section>
     <footer>
+      <p style="color: rgb(236, 236, 236);">Click <a class="wiggle" target="blank" href="contact.html">here</a> to contact me.</p>
       <div class="footer-cont">
-        <a class="gh" href=""><i class="fab fa-github"></i></a>
-        <a class="twtr" href=""><i class="fab fa-twitter"></i></a>
-        <a class="cp" href=""><i class="fab fa-codepen"></i></a>
+        
+        <a class="gh" target="blank" href="https://github.com/emina-ergul"><i class="fab fa-github"></i></a>
+        <a class="twtr" target="blank" href="https://twitter.com/ece_minaa"><i class="fab fa-twitter"></i></a>
+        <a class="cp" target="blank" href="https://codepen.io/ece_mina/pens/public"><i class="fab fa-codepen"></i></a>
       </div>
       <div class="copyright">
         <p>Emina Ergul © 2022</p>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
