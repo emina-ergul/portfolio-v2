@@ -71,24 +71,25 @@ nav {
   border: rgb(236, 236, 236) 3px solid;
 }
 
-form {
-  max-width: 420px;
-  margin: 50px auto;
+.my-message {
+  background: rgb(29, 29, 29);
+  box-shadow: rgb(53, 53, 53) 5px 5px;
+  border-radius: 3px;
+  color: rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 0;
+  margin-top: 20px;
+  max-width: 450px;
+}
+.my-message img {
+  width: 150px;
 }
 
-/* .details {
-  border: 2px cyan solid;
-  border-radius: 5px;
-  width: 100%;
-  resize: vertical;
-  height: 40px;
-  line-height: 150%;
-  font-size: 20px;
-  padding: 5px 11px;
-  margin-bottom: 17px;
-  background: transparent;
-  color: rgb(238, 238, 238);
-} */
+form {
+  max-width: 420px;
+  margin: 50px 7px;
+}
 
 .details {
   color:white;
@@ -98,8 +99,8 @@ form {
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid cyan;
-  transition: all 0.3s;
+  border:2px solid rgb(89, 255, 255);
+  transition: all .2s;
   padding: 13px;
   margin-bottom: 15px;
   width:100%;
@@ -119,10 +120,6 @@ form {
   resize:vertical;
 }
 
-/* .message:focus {
-  border: 2px solid mediumslateblue;
-} */
-
 [type="submit"] {
   width: 100%;
   background: mediumslateblue;
@@ -133,8 +130,7 @@ form {
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
+  transition: 0s;
   font-weight: 700;
 }
 [type="submit"]:hover {
@@ -150,7 +146,6 @@ footer {
 }
 
 .footer-cont {
-  border: 2px solid red;
   text-align: center;
   margin: 20px;
 }
@@ -197,10 +192,18 @@ footer {
   .nav-bar a {
     margin: 0;
   }
+  .my-message {
+    flex-direction: column;
+    padding: 20px 20px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 368px) {
   .nav-bar a {
     font-size: 14px;
+  }
+  .my-message img {
+    width: 130px;
   }
 }
