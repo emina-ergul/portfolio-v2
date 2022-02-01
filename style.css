@@ -439,7 +439,14 @@ footer {
     font-size: 17px;
   }
   .projects {
-    grid-template-columns: 290px;
+    grid-template-columns: 295px;
+  }
+  .project a {
+    display: flex;
+    justify-content: center;
+  }
+  .project a img {
+    width: 120%;
   }
   .about-contents,
   .project {
