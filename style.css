@@ -39,12 +39,16 @@ nav {
   background: rgb(10, 10, 10);
   display: flex;
   justify-content: space-between;
-  /* color: rgb(130, 108, 255); */
 }
 
-.heading h1 {
-  font-size: 30px;
+.heading {
+  display: flex;
+  align-items: center;
   color: mediumslateblue;
+}
+.heading h1 {
+  font-size: 27px;
+  
 }
 
 .nav-bar {
@@ -86,8 +90,7 @@ nav {
 }
 
 .banner {
-  box-shadow: rgb(53, 53, 53) 5px 5px, rgba(47, 47, 47, 0.548) 10px 10px,
-    rgba(36, 36, 36, 0.226) 15px 15px, rgba(14, 14, 14, 0.062) 20px 20px;
+  box-shadow: rgb(53, 53, 53) 5px 5px;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -150,11 +153,12 @@ section {
 }
 
 #projects {
-  background: rgb(21, 50, 61);
+  background: rgb(30, 22, 75);
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 20px 0;
+  margin-bottom: 0;
 }
 .projects {
   margin: 40px auto;
@@ -173,8 +177,13 @@ section {
   flex-direction: column;
 }
 
-.p-title {
+.projects a {
   font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+}
+.project a:hover {
+  color: rgb(240, 255, 24);
 }
 
 .project img {
@@ -185,7 +194,7 @@ section {
 .grey {
   height: 200px;
   /* width: 330px; */
-  background: rgb(5, 5, 5);
+  background: rgb(3, 3, 3);
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -200,11 +209,9 @@ section {
   align-items: center;
   color: #fff;
   padding: 20px 70px 0 70px;
-  border: yellow 3px solid;
 }
 
 .about-contents {
-  border: red 2px solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -215,6 +222,7 @@ section {
   width: 270px;
   height: 270px;
   margin-bottom: 20px;
+  filter: contrast(1.1);
   clip-path: polygon(
     0px 30px,
     15px 30px,
@@ -245,7 +253,10 @@ section {
   flex-direction: column;
   align-items: center;
   font-size: 15px;
-  margin-top: 0;
+  margin: 0;
+  padding: 30px 0;
+  background: rgb(3, 3, 3);
+  width: 100%;
 }
 
 .skills-cont {
@@ -307,7 +318,6 @@ footer {
 }
 
 .footer-cont {
-  border: 2px solid red;
   text-align: center;
   margin: 20px;
 }
@@ -341,7 +351,10 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 22px 4px 0px 4px;
+    padding: 22px 4px 10px 4px;
+  }
+  .heading {
+    text-align: left;
   }
   .nav-bar {
     padding: 10px 0;
@@ -412,8 +425,6 @@ footer {
   }
   .banner {
     padding: 20px 7px 20px 7px;
-    box-shadow: rgb(51, 51, 51) 5px 5px, rgba(47, 47, 47, 0.548) 10px 10px,
-      rgba(36, 36, 36, 0.226) 15px 15px;
     margin: 0;
   }
   .projects {
@@ -426,5 +437,6 @@ footer {
   .about-contents img {
     height: 220px;
     width: 220px;
+    filter: contrast(1);
   }
 }
