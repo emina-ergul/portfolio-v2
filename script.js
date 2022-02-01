@@ -1,4 +1,4 @@
-const typed = document.querySelector(".typed")
+const typed = document.querySelector(".typed");
 
 function typeQuote(element, text, speed) {
   let index = 0;
@@ -13,6 +13,5 @@ function typeQuote(element, text, speed) {
 }
 
 setTimeout(() => {
-    typeQuote(typed, "Hello World.", 220)
+  typeQuote(typed, "Hello World.", 220);
 }, 900);
-
