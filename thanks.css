@@ -15,16 +15,16 @@ body {
 }
 
 .b {
-    color: rgb(51, 173, 255);
-    border: 3px solid rgb(51, 173, 255);
+    color: #45B1FF;
+    border: 3px solid #45B1FF;
   }
   .g {
-    color: rgb(79, 255, 93);
-    border: 3px solid rgb(79, 255, 93);
+    color: #8BF62A;
+    border: 3px solid #8BF62A;
   }
   .y {
-    color: rgb(255, 242, 58);
-    border: 3px solid rgb(255, 242, 58);
+    color: #FFCE22;
+    border: 3px solid #FFCE22;
   }
   .p {
     color: rgb(186, 66, 255);
@@ -34,7 +34,7 @@ body {
 nav {
   width: 100%;
   padding: 20px 40px 20px 20px;
-  background: rgb(20, 20, 20);
+  background: rgb(26, 26, 26);
   display: flex;
   justify-content: space-between;
 }
@@ -77,8 +77,8 @@ nav {
 }
 
 .my-message {
-    background: rgb(37, 37, 37);
-  box-shadow: rgb(53, 53, 53) 5px 5px;
+    background: rgb(49, 49, 49);
+    box-shadow: rgb(90, 90, 90) 5px 5px;
   border-radius: 3px;
   color: rgb(241, 241, 241);
   display: flex;
@@ -106,7 +106,7 @@ nav {
 
 footer {
   width: 100%;
-  background: rgb(20, 20, 20);
+  background: rgb(26, 26, 26);
   padding: 30px 10px 0 10px;
   margin-top: 20px;
   text-align: center;
@@ -129,14 +129,14 @@ footer {
 }
 
 .twtr {
-  color: rgb(20, 161, 255);
-}
-.gh {
-  color: rgb(16, 233, 52);
-}
-.cp {
-  color: rgb(154, 12, 236);
-}
+    color: #45B1FF;
+  }
+  .gh {
+    color: #8BF62A;
+  }
+  .cp {
+    color: rgb(171, 45, 245);
+  }
 
 .copyright {
   color: rgb(129, 129, 129);
