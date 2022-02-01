@@ -269,7 +269,7 @@ section {
 }
 
 .skill {
-  margin: 0 10px;
+  margin: 0 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,7 +283,7 @@ section {
 footer {
   width: 100%;
   background: rgb(26, 26, 26);
-  padding: 30px 10px 0 10px;
+  padding: 10px 10px 0 10px;
   margin-top: 20px;
   text-align: center;
 }
@@ -321,11 +321,11 @@ footer {
 .footer-cont {
   text-align: center;
   margin: 20px;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .footer-cont i {
-  font-size: 27px;
+  font-size: 40px;
   margin: 2px 16px;
 }
 .footer-cont i:hover {
