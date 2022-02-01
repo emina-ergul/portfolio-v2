@@ -9,7 +9,7 @@
 }
 
 body {
-  background: rgb(3, 3, 3);
+  background: rgb(10, 10, 10);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,26 +17,26 @@ body {
 }
 
 .b {
-  color: rgb(20, 161, 255);
-  border: 3px solid rgb(20, 161, 255);
+  color: rgb(51, 173, 255);
+  border: 3px solid rgb(51, 173, 255);
 }
 .g {
-  color: rgb(16, 233, 52);
-  border: 3px solid rgb(16, 233, 52);
+  color: rgb(79, 255, 93);
+  border: 3px solid rgb(79, 255, 93);
 }
 .y {
-  color: rgb(255, 239, 19);
-  border: 3px solid rgb(255, 239, 19);
+  color: rgb(255, 242, 58);
+  border: 3px solid rgb(255, 242, 58);
 }
 .p {
-  color: rgb(154, 12, 236);
-  border: 3px solid rgb(154, 12, 236);
+  color: rgb(186, 66, 255);
+  border: 3px solid rgb(186, 66, 255);
 }
 
 nav {
   width: 100%;
   padding: 20px 40px 20px 20px;
-  background: rgb(10, 10, 10);
+  background: rgb(20, 20, 20);
   display: flex;
   justify-content: space-between;
 }
@@ -44,7 +44,7 @@ nav {
 .heading {
   display: flex;
   align-items: center;
-  color: mediumslateblue;
+  color: rgb(150, 131, 255);
 }
 .heading h1 {
   font-size: 27px;
@@ -94,7 +94,7 @@ nav {
   color: #fff;
   display: flex;
   justify-content: center;
-  background: rgb(29, 29, 29);
+  background: rgb(37, 37, 37);
   border-radius: 1px;
   padding: 25px 25px;
   margin-top: 20px;
@@ -157,7 +157,7 @@ section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 50px 0 20px 0;
   margin-bottom: 0;
 }
 .projects {
@@ -281,8 +281,8 @@ section {
 
 footer {
   width: 100%;
-  background: rgb(8, 8, 8);
-  padding: 20px 10px 0 10px;
+  background: rgb(20, 20, 20);
+  padding: 30px 10px 0 10px;
   margin-top: 20px;
   text-align: center;
 }
@@ -320,6 +320,7 @@ footer {
 .footer-cont {
   text-align: center;
   margin: 20px;
+  padding: 10px 0;
 }
 
 .footer-cont i {
