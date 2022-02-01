@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -96,9 +94,10 @@ nav {
   justify-content: center;
   background: rgb(49, 49, 49);
   border-radius: 1px;
-  padding: 25px 25px;
+  padding: 25px 25px 25px 0px;
   margin-top: 20px;
   width: 620px;
+  font-size: 22px;
 }
 
 .banner-text {
@@ -108,17 +107,17 @@ nav {
   justify-content: center;
   font-weight: 500;
 }
-.banner-text a {
+/* .banner-text a {
   text-decoration: none;
   color: mediumpurple;
-}
-.banner-text a:hover {
+} */
+/* .banner-text a:hover {
   color: mediumturquoise;
-}
+} */
 
 .typed {
   color: rgb(240, 240, 240);
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 900;
   margin-bottom: 12px;
   position: relative;
@@ -129,8 +128,8 @@ nav {
   content: "";
   position: absolute;
   top: 7px;
-  width: 5px;
-  height: 50px;
+  width: 7px;
+  height: 55px;
   background: #8BF62A;
   animation: flash 0.9s infinite;
 }
@@ -142,7 +141,7 @@ nav {
 }
 
 #gif {
-  width: 160px;
+  width: 200px;
 }
 #gif-m {
   display: none;
@@ -383,12 +382,14 @@ footer {
     align-items: center;
     text-align: center;
     width: 95%;
+    font-size: 18px;
   }
   .typed {
-    font-size: 30px;
+    font-size: 40px;
   }
   .typed::after {
-    height: 25px;
+    height: 37px;
+    width: 5px;
   }
   #gif {
     display: none;
@@ -420,7 +421,11 @@ footer {
   .typed {
     margin-top: 50px;
     padding: 0;
-    font-size: 30px;
+    font-size: 35px;
+  }
+  .typed::after {
+    height: 32px;
+    width: 4px;
   }
   .banner-cont {
     padding: 0px 15px 20px 15px;
@@ -428,6 +433,9 @@ footer {
   .banner {
     padding: 20px 7px 20px 7px;
     margin: 0;
+  }
+  .banner-text {
+    font-size: 17px;
   }
   .projects {
     grid-template-columns: 290px;
