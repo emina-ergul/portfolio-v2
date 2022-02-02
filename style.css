@@ -107,13 +107,6 @@ nav {
   justify-content: center;
   font-weight: 500;
 }
-/* .banner-text a {
-  text-decoration: none;
-  color: mediumpurple;
-} */
-/* .banner-text a:hover {
-  color: mediumturquoise;
-} */
 
 .typed {
   color: rgb(240, 240, 240);
@@ -152,11 +145,11 @@ section {
 }
 
 #projects {
-  background: rgb(63, 52, 131);
+  background: rgb(71, 59, 151);
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 50px 0 20px 0;
+  padding: 60px 0 60px 0;
   margin-bottom: 0;
 }
 .projects {
@@ -209,7 +202,7 @@ section {
   justify-content: center;
   align-items: center;
   color: #fff;
-  padding: 20px 70px 0 70px;
+  padding: 20px 70px 20px 70px;
 }
 
 .about-contents {
@@ -255,7 +248,7 @@ section {
   align-items: center;
   font-size: 15px;
   margin: 0;
-  padding: 30px 0;
+  padding: 80px 0 60px 0;
   background: rgb(10, 10, 10);
   width: 100%;
 }
