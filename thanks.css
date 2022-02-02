@@ -84,7 +84,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 10px 10px 10px 0;
-  margin-top: 20px;
+  margin: 40px 5px 0px 5px;
   max-width: 450px;
 }
 .my-message img {
@@ -110,23 +110,28 @@ footer {
   padding: 10px 10px 0 10px;
   margin-top: 20px;
   text-align: center;
-  position: absolute;
-  bottom: 0;
 }
 
 .footer-cont {
-  text-align: center;
-  margin: 20px;
-  padding: 20px 0;
-}
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
 
 .footer-cont i {
     font-size: 40px;
   margin: 2px 16px;
 }
-.footer-cont i:hover {
-  color: rgb(236, 236, 236);
-}
+.footer-cont a:hover {
+    color: rgb(236, 236, 236);
+  }
+  
+  .footer-cont a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 20px;
+  }
 
 .twtr {
     color: #45B1FF;
@@ -135,11 +140,11 @@ footer {
     color: #8BF62A;
   }
   .cp {
-    color: rgb(171, 45, 245);
+    color: rgb(193, 86, 255);
   }
 
 .copyright {
-  color: rgb(129, 129, 129);
+    color: rgb(173, 173, 173);
   text-align: center;
   margin-top: 10px;
 }
@@ -175,5 +180,11 @@ footer {
   }
   .my-message img {
     width: 130px;
+  }
+  .footer-cont {
+    justify-content: space-around;
+  }
+  .footer-cont a {
+    margin: 0;
   }
 }

@@ -152,7 +152,7 @@ section {
 }
 
 #projects {
-  background: rgb(57, 46, 116);
+  background: rgb(63, 52, 131);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -319,17 +319,25 @@ footer {
 }
 
 .footer-cont {
-  text-align: center;
   margin: 20px;
   padding: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-cont i {
   font-size: 40px;
   margin: 2px 16px;
 }
-.footer-cont i:hover {
+.footer-cont a:hover {
   color: rgb(236, 236, 236);
+}
+
+.footer-cont a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 20px;
 }
 
 .twtr {
@@ -339,11 +347,11 @@ footer {
   color: #8BF62A;
 }
 .cp {
-  color: rgb(171, 45, 245);
+  color: rgb(193, 86, 255);
 }
 
 .copyright {
-  color: rgb(129, 129, 129);
+  color: rgb(173, 173, 173);
   text-align: center;
   margin-top: 10px;
 }
@@ -439,7 +447,7 @@ footer {
     font-size: 17px;
   }
   .projects {
-    grid-template-columns: 295px;
+    grid-template-columns: 312px;
   }
   .project a {
     display: flex;
@@ -456,5 +464,12 @@ footer {
     height: 220px;
     width: 220px;
     filter: contrast(1);
+  }
+  .footer-cont {
+    justify-content: space-around;
+    /* margin: 0 10px; */
+  }
+  .footer-cont a {
+    margin: 0;
   }
 }
