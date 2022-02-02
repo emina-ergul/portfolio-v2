@@ -77,13 +77,12 @@ nav {
 }
 
 .banner-cont {
-  margin: 50px 0;
-  /* border: 3px rgb(255, 0, 0) solid; */
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 50px 70px 40px 70px;
+  padding: 80px 70px 0px 70px;
   color: rgb(255, 255, 255);
 }
 
