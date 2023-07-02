@@ -137,10 +137,11 @@ footer {
     justify-content: center;
   }
 
-.footer-cont i {
-    font-size: 40px;
-  margin: 2px 16px;
-}
+  .footer-cont i {
+    font-size: 32px;
+    margin: 2px 18px;
+  }
+  
 .footer-cont a:hover {
     color: rgb(236, 236, 236);
   }
@@ -159,7 +160,7 @@ footer {
     color: #8BF62A;
   }
   .li {
-    color: #3617ff;
+    color: #573eff;
   }
   .cp {
     color: rgb(193, 86, 255);
