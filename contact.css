@@ -113,6 +113,7 @@ nav {
 form {
   max-width: 420px;
   margin: 50px 7px;
+  padding: 0px 20px 60px 20px;
 }
 
 .details {
@@ -165,7 +166,7 @@ form {
 }
 
 footer {
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
   background: rgb(26, 26, 26);
